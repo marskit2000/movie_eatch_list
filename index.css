@@ -1,0 +1,195 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+header {
+  width: 100%;
+  height: 26vh;
+
+  background-color: #555;
+  background-image: url("./images/header-image.jpg");
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+  background-position: 0 25%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* tyopgraphy */
+h1{
+  font-weight: 800;
+  font-size: 2.625rem;
+}
+
+.title {
+  color: #fff;
+}
+
+.initial-content {
+  color: #dfdddd;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* layout */
+.main-section {
+  width: 100%;
+  height: 74vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.outer-container {
+  width: 550px;
+}
+
+header > .outer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  t
+}
+
+/* header */
+header > .outer-container> .watchlist-btn {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Search Form */
+.search-form {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  margin-top: -1.7rem;
+  background: #d1d5db;
+}
+
+.search-form > label {
+  width: 20%;
+  height: 4vh;
+  margin: 0;
+}
+
+.search-form > input {
+  width: 80%;
+  padding: 0.7rem;
+  border: none;
+}
+
+.search-form > button {
+  margin: 0;
+  padding: 10px;
+  width: 16%;
+  border: none;
+  font-weight: 500;
+  text-align: center;
+  background: #d1d5db;
+  cursor: pointer;
+}
+
+.main-initial-container {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Movie Element*/
+
+.movie {
+  display: flex;
+  width: 100%;
+  height: calc(70vh / 3);
+  margin-top: 40px;
+}
+
+.movie-title {
+  font-size: 1.125rem;
+  color: #000;
+  font-weight: 700;
+}
+
+.movie-rating {
+  font-size: 0.75rem;
+  margin-left: 30px;
+}
+
+.movie-description {
+  color: #687280;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+
+.movie-poster {
+  background: pink;
+  width: 25%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.movie-info {
+  width: 75%;
+  margin-left: 20px;
+}
+
+.movie-inner-info {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.movie-inner-info p{
+  font-size: 0.75rem;
+  color: #111827;
+  margin-right: 20px;
+}
+
+.watchlist-btn{
+  font-size: 0.75rem;
+  color: #111827;
+  font-weight: 500;
+  border: none;
+  background: none;
+  cursor: pointer;
+
+}
+
+/* watchlist */
+
+.watchlist-no-movie {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.watchlist-no-movie > h2 {
+  color: #666;
+  font-size: 1.5rem;
+}
+
+.watchlist-no-movie > a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
